@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/plus"
+        android:title="plus"
+        android:icon="@drawable/ic_camera"
+        android:orderInCategory="100"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/aufnehmen"
+                android:title="@string/aufnehmen"></item>
+            <item
+                android:id="@+id/vorhanden"
+                android:title="@string/gallerie"></item>
+        </menu>
+    </item>
+    <item android:id="@+id/search"
+        android:title="suchen"
+        android:icon="@drawable/ic_search"
+        android:orderInCategory="90"
+        app:showAsAction="always">
+    </item>
+    <item android:id="@+id/logout"
+        android:title="@string/abmelden"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_logout"></item>
+</menu>

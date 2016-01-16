@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Start.Register"
+    android:background="#c0c0c0"
+    android:padding="0dp">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_bar"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayoutRegister">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/tbxUsername"
+            android:layout_marginTop="50dp"
+            android:hint="@string/BenutzerName"
+            android:textColor="#ffffff"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_corner_red"
+            android:padding="10dp"
+            android:textColorHint="#ffffff"
+            android:singleLine="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/tbxPassword"
+            android:layout_marginTop="50dp"
+            android:hint="@string/Passwort"
+            android:textColor="#ffffff"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:textColorHint="#ffffff"
+            android:inputType="textPassword"
+            android:background="@drawable/rounded_corner_red"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/prgStatus"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.25"
+                android:indeterminate="false"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Bad"
+                android:id="@+id/lblStatus"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ff0000"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/tbxEmail"
+            android:layout_marginTop="50dp"
+            android:hint="@string/Email"
+            android:textColor="#ffffff"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:textColorHint="#ffffff"
+            android:background="@drawable/rounded_corner_red"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Registrieren"
+            android:id="@+id/btnRegistrierenReg"
+            android:layout_gravity="right"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/corner_blue"
+            android:textColor="#ffffff"
+            android:onClick="onClickRegister" />
+    </LinearLayout>
+
+</RelativeLayout>

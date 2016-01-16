@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Registrieren">Registrieren</string>
+    <string name="BenutzerName">Benutzername</string>
+    <string name="Passwort">Passwort</string>
+    <string name="FalschesPasswort">Ihr eingegebener Benutzername oder Password ist falsch</string>
+    <string name="Bad">Schlecht</string>
+    <string name="Okay">Okay</string>
+    <string name="Gut">Gut</string>
+    <string name="Perfekt">Perfekt</string>
+    <string name="eingabenMerken">Eingaben merken</string>
+    <string name="automatischAnmelden">Automatisch anmelden</string>
+    <string name="bitteWarten">Bitte warten...</string>
+    <string name="aktivitaeten">Aktivitäten</string>
+    <string name="foto">Foto</string>
+    <string name="gallerie">Gallerie</string>
+    <string name="aufnehmen">Aufnehmen</string>
+    <string name="suchen">Suchen</string>
+    <string name="abmelden">Abmelden</string>
+</resources>
